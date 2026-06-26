@@ -103,9 +103,9 @@ export function loadConfig(): Config {
       facilitatorApiKeyId: process.env.CDP_API_KEY_ID?.trim() ?? "",
       facilitatorApiKeySecret: process.env.CDP_API_KEY_SECRET?.trim() ?? "",
       shield: {
-        publishableKey: process.env.OPENFORT_SHIELD_PUBLISHABLE_KEY ?? "",
-        secretKey: process.env.OPENFORT_SHIELD_SECRET_KEY ?? "",
-        encryptionShare: process.env.OPENFORT_SHIELD_ENCRYPTION_SHARE ?? "",
+        publishableKey: process.env.SHIELD_PUBLISHABLE_KEY ?? "",
+        secretKey: process.env.SHIELD_SECRET_KEY ?? "",
+        encryptionShare: process.env.SHIELD_ENCRYPTION_SHARE ?? "",
       },
     },
   };

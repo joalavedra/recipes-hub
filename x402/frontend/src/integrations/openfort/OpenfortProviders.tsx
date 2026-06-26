@@ -25,7 +25,7 @@ export function OpenfortProviders({ children }: { children: React.ReactNode }) {
             // Set the wallet configuration. In this example, we will be using the embedded signer.
             walletConfig={{
               shieldPublishableKey: import.meta.env
-                .VITE_OPENFORT_SHIELD_PUBLISHABLE_KEY!, // The Shield publishable key from https://dashboard.openfort.io
+                .VITE_SHIELD_PUBLISHABLE_KEY!, // The Shield publishable key from https://dashboard.openfort.io
               ethereum: {
                 chainId: baseSepolia.id, // The chain ID for the Ethereum network you want to use
                 ethereumFeeSponsorshipId: import.meta.env

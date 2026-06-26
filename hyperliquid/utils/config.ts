@@ -23,14 +23,14 @@ function ensureValue(value: string | undefined, message: string): string {
 export function getPublishableKey(): string {
   return ensureValue(
     getExtraValue<string>("openfortPublishableKey"),
-    "[CONFIG] Missing Openfort publishable key. Set OPENFORT_PROJECT_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortPublishableKey."
+    "[CONFIG] Missing Openfort publishable key. Set OPENFORT_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortPublishableKey."
   );
 }
 
 export function getShieldPublishableKey(): string {
   return ensureValue(
     getExtraValue<string>("openfortShieldPublishableKey"),
-    "[CONFIG] Missing Openfort Shield publishable key. Set OPENFORT_SHIELD_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortShieldPublishableKey."
+    "[CONFIG] Missing Openfort Shield publishable key. Set SHIELD_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortShieldPublishableKey."
   );
 }
 

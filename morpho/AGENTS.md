@@ -11,8 +11,8 @@
 - `pnpm dev`
 
 ## Environment
-- `.env` needs `VITE_OPENFORT_PUBLISHABLE_KEY`, `VITE_OPENFORT_SHIELD_PUBLISHABLE_KEY`, `VITE_BACKEND_URL`, and optionally `VITE_OPENFORT_POLICY_ID` and `VITE_WALLET_CONNECT_PROJECT_ID`.
-- Backend uses external [openfort-backend-quickstart](https://github.com/openfort-xyz/openfort-backend-quickstart) which requires `OPENFORT_API_KEY` and `OPENFORT_SHIELD_SECRET_KEY`.
+- `.env` needs `VITE_OPENFORT_PUBLISHABLE_KEY`, `VITE_SHIELD_PUBLISHABLE_KEY`, `VITE_BACKEND_URL`, and optionally `VITE_OPENFORT_POLICY_ID` and `VITE_WALLET_CONNECT_PROJECT_ID`.
+- Backend uses external [openfort-backend-quickstart](https://github.com/openfort-xyz/openfort-backend-quickstart) which requires `OPENFORT_SECRET_KEY` and `SHIELD_SECRET_KEY`.
 - Update env files when rotating Shield credentials or changing Morpho vault addresses.
 
 ## Testing instructions

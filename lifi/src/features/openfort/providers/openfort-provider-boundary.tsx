@@ -19,10 +19,10 @@ const _ethereumFeeSponsorshipId =
     : _feeSponsorshipId ?? undefined;
 
 const PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_OPENFORT_PUBLISHABLE_KEY ?? "";
-const SHIELD_KEY = process.env.NEXT_PUBLIC_OPENFORT_SHIELD_PUBLISHABLE_KEY ?? "";
+const SHIELD_PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_SHIELD_PUBLISHABLE_KEY ?? "";
 
 const WALLET_CONFIG: OpenfortWalletConfig = {
-  shieldPublishableKey: SHIELD_KEY,
+  shieldPublishableKey: SHIELD_PUBLISHABLE_KEY,
   ethereum: {
     ethereumFeeSponsorshipId: _ethereumFeeSponsorshipId,
   },
