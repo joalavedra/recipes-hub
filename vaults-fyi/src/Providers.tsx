@@ -26,7 +26,7 @@ export function Providers({ children }: { children: ReactNode }) {
             publishableKey={import.meta.env.VITE_OPENFORT_PUBLISHABLE_KEY}
             walletConfig={{
               shieldPublishableKey: import.meta.env
-                .VITE_OPENFORT_SHIELD_PUBLISHABLE_KEY,
+                .VITE_SHIELD_PUBLISHABLE_KEY,
               createEncryptedSessionEndpoint: `${import.meta.env.VITE_BACKEND_URL}/api/protected-create-encryption-session`,
               ethereum: {
                 ethereumFeeSponsorshipId:

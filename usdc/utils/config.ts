@@ -14,7 +14,7 @@ export function getPublishableKey(): string {
   const value = Constants.expoConfig?.extra?.openfortPublishableKey as string | undefined;
   if (isPlaceholder(value)) {
     throw new Error(
-      "[CONFIG] Missing Openfort publishable key. Set OPENFORT_PROJECT_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortPublishableKey."
+      "[CONFIG] Missing Openfort publishable key. Set OPENFORT_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortPublishableKey."
     );
   }
   return value as string;
@@ -24,7 +24,7 @@ export function getShieldPublishableKey(): string {
   const value = Constants.expoConfig?.extra?.openfortShieldPublishableKey as string | undefined;
   if (isPlaceholder(value)) {
     throw new Error(
-      "[CONFIG] Missing Openfort Shield publishable key. Set OPENFORT_SHIELD_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortShieldPublishableKey."
+      "[CONFIG] Missing Openfort Shield publishable key. Set SHIELD_PUBLISHABLE_KEY in .env or update app.config.js extra.openfortShieldPublishableKey."
     );
   }
   return value as string;

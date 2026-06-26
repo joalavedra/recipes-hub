@@ -21,8 +21,8 @@ cp .env.example .env
 Add your Openfort credentials to `.env`:
 
 ```env
-OPENFORT_API_KEY=sk_your_secret_key
-OPENFORT_SHIELD_SECRET_KEY=your_shield_secret_key
+OPENFORT_SECRET_KEY=sk_your_secret_key
+SHIELD_SECRET_KEY=your_shield_secret_key
 ```
 
 Then start the backend:
@@ -58,7 +58,7 @@ Update `.env` with your credentials:
 
 ```env
 VITE_OPENFORT_PUBLISHABLE_KEY=pk_your_publishable_key
-VITE_OPENFORT_SHIELD_PUBLISHABLE_KEY=pk_your_shield_publishable_key
+VITE_SHIELD_PUBLISHABLE_KEY=pk_your_shield_publishable_key
 VITE_OPENFORT_FEE_SPONSORSHIP_ID=pol_optional_fee_sponsorship
 VITE_WALLET_CONNECT_PROJECT_ID=your_walletconnect_project_id
 VITE_BACKEND_URL=http://localhost:3000

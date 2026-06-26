@@ -25,7 +25,7 @@ This recipe uses the same external backend as the other Openfort recipes for Shi
 git clone https://github.com/openfort-xyz/openfort-backend-quickstart.git
 cd openfort-backend-quickstart
 cp .env.example .env
-# add OPENFORT_API_KEY and OPENFORT_SHIELD_SECRET_KEY
+# add OPENFORT_SECRET_KEY and SHIELD_SECRET_KEY
 pnpm install
 pnpm dev
 ```
@@ -54,7 +54,7 @@ Fill in:
 
 ```env
 VITE_OPENFORT_PUBLISHABLE_KEY=pk_...
-VITE_OPENFORT_SHIELD_PUBLISHABLE_KEY=pk_...
+VITE_SHIELD_PUBLISHABLE_KEY=pk_...
 VITE_OPENFORT_FEE_SPONSORSHIP_ID=pol_...           # optional
 VITE_BACKEND_URL=http://localhost:3000
 VAULTS_FYI_API_KEY=...
